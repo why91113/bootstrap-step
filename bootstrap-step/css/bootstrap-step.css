@@ -1,0 +1,111 @@
+
+/*common css*/
+.step-container ul, .step-container li {
+    margin: 0;
+    padding: 0;
+}
+
+.step-container {
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Sans GB","Wenquanyi Micro Hei","Microsoft Yahei",Arial,sans-serif;
+    position: relative;
+    color: #000;
+    font-size: 18px;
+}
+
+.step-container .step-container-steps {
+    position: relative;
+    z-index: 10;
+}
+
+.step-container ul {
+    list-style: none;
+    width: 100%;
+}
+
+
+.step-container li {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.step-container li .step-text {
+    padding: 0 3px;
+}
+
+.step-container li i {
+    background-color: #ccc;
+    border-radius: 9px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    height: 18px;
+    line-height: 20px;
+    top: auto;
+    width: 18px;
+}
+
+/*进度条 css*/
+.step-container .step-progress {
+    height: 10px;
+    position: absolute;
+    z-index: 9;
+    width: 50%;
+    left: 25%;
+    bottom: 7px;
+    overflow: hidden;
+}
+
+.step-container .step-progress-bar {
+    background: #e4e4e4;
+    height: 100%;
+}
+
+.step-container .step-progress-highlight {
+    width: 0;
+    height: 100%;
+}
+
+/*blue css*/
+.step-blue .step-step-undone {
+    color: #9c9a9b;
+}
+
+.step-blue .step-step-done {
+}
+
+.step-blue .step-step-done i {
+    background-color: #399ade;
+}
+
+.step-blue .step-step-active {
+    color: #3276b1;
+}
+
+.step-blue .step-step-active i {
+    background-color: #3276b1;
+}
+
+.step-blue .step-progress-highlight {
+    background: #60baff;
+}
+
+/*添加响应式CSS*/
+@media (max-width: 767px) {
+    .step-container {
+        font-size: 14px;
+    }
+
+    .step-container li i {
+        border-radius: 7px;
+        font-size: 9px;
+        height: 14px;
+        line-height: 16px;
+        width: 14px;
+    }
+
+    .step-container .step-progress {
+        height: 5px;
+        bottom: 6px;
+    }
+}
