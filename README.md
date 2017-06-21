@@ -1,5 +1,5 @@
 基于bootstrap的简洁流程插件
-根据https://github.com/iyangyuan/ystep的版本修改的
+根据https://github.com/iyangyuan/ystep 的版本修改的
 首先感谢iyangyuan，没看到他写的，我可能就要从头写一个。
 
 简介：
